@@ -1,0 +1,57 @@
+server:
+  port: 18006
+
+jasypt:
+  encryptor:
+    password: cvnavi
+
+info:
+  version: @project.version@
+
+
+spring:
+  application:
+    name: @artifactId@
+  profiles:
+    active: native
+
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: true
+        hostname: localhost
+        serviceName: ${spring.application.name}
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 15s
+        instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+        prefer-ip-address: true
+
+---
+spring:
+  profiles: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/conf/
+      fail-fast: true
+---
+spring:
+  profiles: remote
+  cloud:
+    config:
+      enabled: true
+      server:
+        git:
+          uri: http://xxx.xxx.com/springCloud/configRepo.git
+          searchPaths: backend/{application},backend/application,gateway
+          username: ENC(tAw645hl/umN3RqqQLEYoJEldjWemQrjUZUfLGQ3QXo=)
+          password: ENC(ejDjI6DOwZYFbgcnmo6mgXnn985vA9iR)
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
