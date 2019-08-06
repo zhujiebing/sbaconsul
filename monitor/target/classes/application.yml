@@ -1,6 +1,9 @@
 server:
   port: 18007
 
+info:
+  version: 1.0-SNAPSHOT
+
 spring:
   application:
     name: monitor

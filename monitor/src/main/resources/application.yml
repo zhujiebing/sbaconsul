@@ -1,6 +1,9 @@
 server:
   port: 18007
 
+info:
+  version: @project.version@
+
 spring:
   application:
     name: @artifactId@
