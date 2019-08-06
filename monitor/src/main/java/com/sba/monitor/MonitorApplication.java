@@ -1,4 +1,4 @@
-package com.cvnavi.monitor;
+package com.sba.monitor;
 
 import de.codecentric.boot.admin.server.config.AdminServerProperties;
 import de.codecentric.boot.admin.server.config.EnableAdminServer;

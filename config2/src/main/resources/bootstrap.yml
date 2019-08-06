@@ -3,7 +3,7 @@ server:
 
 jasypt:
   encryptor:
-    password: cvnavi
+    password: sba
 
 info:
   version: @project.version@

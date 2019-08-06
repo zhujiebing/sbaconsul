@@ -1,11 +1,11 @@
-package com.cvnavi.mail;
+package com.sba.mail;
 
 /**
  * @description:
  * @author: zjbing
  * @create: 2019-07-31 13:30
  **/
-import com.cvnavi.monitor.MonitorApplication;
+import com.sba.monitor.MonitorApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

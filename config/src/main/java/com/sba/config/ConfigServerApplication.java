@@ -1,4 +1,4 @@
-package com.cvnavi.config;
+package com.sba.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;

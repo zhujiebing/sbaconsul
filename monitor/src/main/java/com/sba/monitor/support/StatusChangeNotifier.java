@@ -1,4 +1,4 @@
-package com.cvnavi.monitor.support;
+package com.sba.monitor.support;
 
 import de.codecentric.boot.admin.server.domain.entities.Instance;
 import de.codecentric.boot.admin.server.domain.entities.InstanceRepository;
