@@ -23,7 +23,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <mysql.connector.version>5.1.38</mysql.connector.version>
-        <fastjson.version>1.2.58</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <jasypt.version>2.1.1</jasypt.version>
         <security.oauth.version>2.3.6.RELEASE</security.oauth.version>
         <httpclient.version>3.1</httpclient.version>
